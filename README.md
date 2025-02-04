@@ -1,101 +1,76 @@
-# _AI Knowledge Engine
+# _AI Knowledge Engine_
 
 A powerful AI-driven system integrating Retrieval-Augmented Generation (RAG), LangGraph, OpenAI embeddings, and Supabase for efficient document retrieval, processing, and conversational AI workflows.
 
-Features
+## Features
 
-Document Ingestion: Load and split HTML documents into smaller chunks.
+- **Document Ingestion**: Load and split HTML documents into smaller chunks.
+- **Vector Storage**: Store embeddings in Supabase for efficient retrieval.
+- **RAG Pipeline**: Retrieve relevant context and generate answers using OpenAI.
+- **LangGraph Integration (Coming Soon)**: Implement graph-based LLM workflows.
+- **Chatbot Capabilities**: Extendable to real-time conversational AI.
 
-Vector Storage: Store embeddings in Supabase for efficient retrieval.
+## Tech Stack
 
-RAG Pipeline: Retrieve relevant context and generate answers using OpenAI.
+- **Python** (Primary Language)
+- **OpenAI API** (LLM & Embeddings)
+- **Supabase** (Vector Database & Storage)
+- **LangChain & LangGraph** (AI Workflow & Retrieval)
+- **BeautifulSoup** (HTML Parsing)
 
-LangGraph Integration (Coming Soon): Implement graph-based LLM workflows.
+## Setup Instructions
 
-Chatbot Capabilities: Extendable to real-time conversational AI.
+1. **Clone the Repository**
+    ```sh
+    git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
+    cd YOUR_REPO_NAME
+    ```
 
-Tech Stack
+2. **Install Dependencies**
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-Python (Primary Language)
+3. **Set Up Environment Variables**
 
-OpenAI API (LLM & Embeddings)
+    Create a `.env` file and add your credentials:
+    ```env
+    OPENAI_API_KEY=your_openai_api_key
+    SUPABASE_URL=your_supabase_url
+    SUPABASE_KEY=your_supabase_key
+    ```
 
-Supabase (Vector Database & Storage)
+4. **Run the Notebook**
 
-LangChain & LangGraph (AI Workflow & Retrieval)
+    If using Jupyter Notebook, run:
+    ```sh
+    jupyter notebook
+    ```
+    Then, open the notebook and execute the cells step by step.
 
-BeautifulSoup (HTML Parsing)
 
-Setup Instructions
+## Usage Workflow
 
-1. Clone the Repository
+1. **Load & Split Documents**: Extract text from HTML files.
+2. **Generate & Store Embeddings**: Store document vectors in Supabase.
+3. **Retrieve Relevant Chunks**: Match user queries with stored documents.
+4. **Generate Answer**: Use OpenAI LLM to create responses.
+5. **LangGraph Integration (Upcoming)**: Advanced AI workflow management.
 
-git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+## Roadmap
 
-2. Install Dependencies
+- ✅ Implement RAG-based document retrieval
+- ✅ Store embeddings in Supabase
+- ⏳ Integrate LangGraph for workflow automation
+- ⏳ Develop chatbot functionalities
+- ⏳ Optimize for real-time inference
 
-pip install -r requirements.txt
-
-3. Set Up Environment Variables
-
-Create a .env file and add your credentials:
-
-OPENAI_API_KEY=your_openai_api_key
-SUPABASE_URL=your_supabase_url
-SUPABASE_KEY=your_supabase_key
-
-4. Run the Notebook
-
-If using Jupyter Notebook, run:
-
-jupyter notebook
-
-Then, open the notebook and execute the cells step by step.
-
-Folder Structure
-
-├── notebooks/                # Jupyter Notebooks for development
-├── src/                      # Core source code
-│   ├── ingest.py             # Document ingestion & processing
-│   ├── embed.py              # Embedding generation
-│   ├── retrieve.py           # Retrieve relevant chunks
-│   ├── generate.py           # Generate answers using LLM
-│   ├── graph_workflow.py      # LangGraph integration (WIP)
-├── requirements.txt          # Python dependencies
-├── README.md                 # Project documentation
-
-Usage Workflow
-
-Load & Split Documents → Extract text from HTML files.
-
-Generate & Store Embeddings → Store document vectors in Supabase.
-
-Retrieve Relevant Chunks → Match user queries with stored documents.
-
-Generate Answer → Use OpenAI LLM to create responses.
-
-LangGraph Integration (Upcoming) → Advanced AI workflow management.
-
-Roadmap
-
-✅ Implement RAG-based document retrieval
-
-✅ Store embeddings in Supabase
-
-⏳ Integrate LangGraph for workflow automation
-
-⏳ Develop chatbot functionalities
-
-⏳ Optimize for real-time inference
-
-Contributing
+## Contributing
 
 Feel free to submit issues, suggestions, or pull requests!
 
-License
+## License
 
 This project is licensed under the MIT License.
 
 🚀 Built with AI & Passion 🚀
-
