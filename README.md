@@ -73,4 +73,4 @@ Feel free to submit issues, suggestions, or pull requests!
 
 This project is licensed under the MIT License.
 
-🚀 Built with AI & Passion 🚀
+🚀 Built with  Passion 🚀
