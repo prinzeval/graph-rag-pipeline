@@ -1,0 +1,11 @@
+digraph "RAG Workflow" {
+	A [label="Load & Split Documents"]
+	B [label="Generate & Store Embeddings"]
+	C [label="Retrieve Relevant Chunks"]
+	D [label="Generate Answer"]
+	E [label="LangGraph Integration (Upcoming)"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+}
