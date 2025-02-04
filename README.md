@@ -22,7 +22,7 @@ A powerful AI-driven system integrating Retrieval-Augmented Generation (RAG), La
 
 1. **Clone the Repository**
     ```sh
-    git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
+    git clone https://github.com/prinzeval/graph-rag-pipeline.git
     cd YOUR_REPO_NAME
     ```
 
