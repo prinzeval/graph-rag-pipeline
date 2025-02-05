@@ -19,3 +19,4 @@ langchain_groq
 streamlit
 markdown
 langchain
+tavily-python
