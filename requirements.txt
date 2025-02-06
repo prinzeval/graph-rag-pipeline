@@ -20,3 +20,6 @@ streamlit
 markdown
 langchain
 tavily-python
+flax
+tensorflow
+torch
